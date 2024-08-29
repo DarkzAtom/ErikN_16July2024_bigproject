@@ -1,0 +1,21 @@
+
+{
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "name": "Chrome Proxy",
+    "permissions": [
+        "proxy",
+        "tabs",
+        "unlimitedStorage",
+        "storage",
+        "webRequest",
+        "webRequestAuthProvider"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "minimum_chrome_version":"22.0.0"
+}
